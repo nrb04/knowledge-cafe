@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="flex  mx-20 ">
-        <Card />
+       
         <Cards></Cards>
         <Cart />
       </div>

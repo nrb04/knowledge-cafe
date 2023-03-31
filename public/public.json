@@ -8,60 +8,65 @@
         "description" : " jodurima modurima k dheke bolese tara keno ake onner shate kothabole na tader  ki niyeghograhoyese",
         "date": "mar 14",
         "reading": 1,
-        "img": "/img/sobi1.png"
+        "img": "/img/sobi1.png",
+        "pimg": "/img/man1.png"
         
 
 },
     {
 
-   "id": "1",
+   "id": "2",
         "category": " #programming  #beginners "  ,
         "name": "kantamara ",
         "title": "jodurima dakse modurima ke ",
         "description" : " jodurima modurima k dheke bolese tara keno ake onner shate kothabole na tader  ki niyeghograhoyese",
         "date": "mar 14",
         "reading": 1,
-        "img": "/img/sobi1.png"
+        "img": "/img/sobi2.png",
+        "pimg": "/img/man2.png"
         
 
 },
 
     {
 
-   "id": "1",
+   "id": "3",
         "category": " #programming  #beginners "  ,
         "name": "kantamara ",
         "title": "jodurima dakse modurima ke ",
         "description" : " jodurima modurima k dheke bolese tara keno ake onner shate kothabole na tader  ki niyeghograhoyese",
         "date": "mar 14",
         "reading": 1,
-        "img": "/img/sobi1.png"
+        "img": "/img/sobi3.png",
+        "pimg": "/img/man3.png"
         
 
 },
     {
 
-   "id": "1",
+   "id": "4",
         "category": " #programming  #beginners "  ,
         "name": "kantamara ",
         "title": "jodurima dakse modurima ke ",
         "description" : " jodurima modurima k dheke bolese tara keno ake onner shate kothabole na tader  ki niyeghograhoyese",
         "date": "mar 14",
         "reading": 1,
-        "img": "/img/sobi1.png"
+        "img": "/img/sobi4.jpg",
+        "pimg": "/img/man4.jpg"
         
 
 },
     {
 
-   "id": "1",
+   "id": "5",
         "category": " #programming  #beginners "  ,
         "name": "kantamara ",
         "title": "jodurima dakse modurima ke ",
         "description" : " jodurima modurima k dheke bolese tara keno ake onner shate kothabole na tader  ki niyeghograhoyese",
         "date": "mar 14",
         "reading": 1,
-        "img": "/img/sobi1.png"
+        "img": "/img/sobi5.jpg",
+        "pimg": "/img/man5.jpg"
         
 
 }
