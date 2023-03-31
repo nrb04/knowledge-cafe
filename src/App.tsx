@@ -1,13 +1,25 @@
-import { useState } from 'react'
-
+import { useState,useEffect } from 'react'
 import './App.css'
+import Card from './componads/Card'
+import Header from './componads/Header/Header'
+import Cart from './componads/Cart'
+import Cards from './componads/Cards'
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <div className="App">
-
+      <Header />
+      <div className="flex  mx-20 ">
+        <Card />
+        <Cards></Cards>
+        <Cart />
+      </div>
+     
     </div>
   )
 }
