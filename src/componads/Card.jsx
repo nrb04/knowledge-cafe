@@ -2,12 +2,12 @@
 
 
 const Card =(props)=> {
-const { title, img, pimg, description } = props.card;
+const { title, img, pimg, description, id } = props.card;
 const handleAddToCart = props.handleAddToCart;
  
     return (
         
-  <div className="px-5 w-3/4  bg-white shadow-lg dark:bg-neutral-700">
+  <div >
     <a href="#!">
       <img
         className="rounded-t-lg  w-full h-96"
@@ -22,7 +22,7 @@ const handleAddToCart = props.handleAddToCart;
             {title}
                     </h5>
                   
-          <button onClick={() => handleAddToCart(props.card)} className='btn-cart'>
+          <button onClick={() => props.handleAddToCart(props.card, id )} className='btn-cart'>
                 Add to Cart
                 </button>
 
@@ -34,7 +34,8 @@ const handleAddToCart = props.handleAddToCart;
         className="" >
         Button
       </button>
-    </div>
+        </div>
+          
   </div>
             
         

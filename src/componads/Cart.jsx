@@ -1,9 +1,16 @@
 import React from 'react';
 
-const Cart = () => {
+
+const Cart = ({cart}) => {
+
     return (
         <div>
-            <div className="w-1/4 bg-white shadow-lg dark:bg-neutral-700"> hello eorld</div>
+            <div >
+             <h1 className='mb-4 text-2xl font-bold'>Bookmarked Blog:{cart.length}</h1>
+                {
+                    cart.map(card=><h2 className='my-4 text-lg text-center border-double border-2 shadow-lg border-bg-neutral-700 'key={card.id} > {card.description}</h2>)
+                }
+            </div>
         </div>
     );
 };
