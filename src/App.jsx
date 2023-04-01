@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from "./componads/Header";
 import './App.css'
 import Cards from './componads/Cards'
+import QA from './componads/QA'
 
 function App() {
 
@@ -12,8 +13,7 @@ function App() {
       
         <Cards></Cards>
 
-    
-      
+  <QA></QA>
     </div>
   )
 }

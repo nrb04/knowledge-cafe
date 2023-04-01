@@ -15,17 +15,27 @@ const Cards = () => {
             .then(res => res.json())
             .then(data => setCards(data))
     }, []);
-    const handleAddToCart = (card) => {
-       const newCart = [...cart, card];
+    const handleAddToCart = (card, id) => {
+        const found = cart.find((card) => card.id == id);
+       if (found) {
+      toast.error("OH! NO Sorry already add  ");
+    } else {
+      toast("ok :) Done Sucess");
+        const newCart = [...cart, card];
         setCart(newCart);
     }
+    };
+
+
+
    const handleReadTime = (reading) => {
     const newReadTime = [...readTime, reading];
     setReadTime(newReadTime);
-  };
+   };
+    
     return (
-        <div className="flex  mx-20 ">
-          <div className="px-5 w-3/4  bg-white shadow-lg dark:bg-neutral-700" >  {
+        <div className="lg:flex justify-center  md:mx-auto ">
+          <div className="content-center lg:px-10 lg:w-2/4  bg-white shadow-lg dark:bg-neutral-700" >  {
                 cards.map(card => <Card key={card.id}
                     card={card}
                     handleAddToCart={handleAddToCart}
@@ -36,9 +46,20 @@ const Cards = () => {
                
              
             </div>
-            <div className="w-1/4 bg-white shadow-lg dark:bg-neutral-700" >
+            <div className="lg:w-1/4 bg-white shadow-lg dark:bg-neutral-700" >
                     <Cart cart={cart} reading={readTime} ></Cart>
-      
+      <ToastContainer
+position="top-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop
+closeOnClick
+rtl
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="dark"
+/>
             </div>
         </div>
     );
