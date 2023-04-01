@@ -7,10 +7,10 @@ const Cart = ({ cart, reading }) => {
         totalTime = totalTime + parseInt(card.reading)
     }
     return (
-        <div>
-            <div >
-                <h1>Time On Read: {totalTime}</h1>
-             <h1 className='mb-4 text-2xl font-bold'>Bookmarked Blog:{cart.length}</h1>
+        <div >
+            <div className='shadow-2xl px-4 py-4 my-5'>
+                <h1 >Time On Read: {totalTime}</h1>
+             <h1 className='mb-4 text-2xl font-bold '>Bookmarked Blog:{cart.length}</h1>
                 {
                     cart.map(card=><h2 className='my-4 text-lg text-center border-double border-2 shadow-lg border-bg-neutral-700 'key={card.id} > {card.description}</h2>)
                 }

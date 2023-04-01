@@ -8,10 +8,10 @@ const { date,name,reading, title, img, pimg, description, id } = props.card;
  
     return (
         
-  <div >
+  <div className="shadow-2xl px-4 py-4 my-5" >
     <a href="#!">
       <img
-        className="rounded-t-sm  w-full h-96"
+        className=" rounded-t-sm  w-full h-96"
         src={img}
         alt="" />
         </a>
