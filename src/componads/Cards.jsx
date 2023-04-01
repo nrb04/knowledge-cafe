@@ -34,8 +34,8 @@ const Cards = () => {
    };
     
     return (
-        <div className="md:flex  mx-20 ">
-          <div className="px-5 w-3/4  bg-white shadow-lg dark:bg-neutral-700" >  {
+        <div className="lg:flex justify-center  md:mx-auto ">
+          <div className="content-center lg:px-10 lg:w-2/4  bg-white shadow-lg dark:bg-neutral-700" >  {
                 cards.map(card => <Card key={card.id}
                     card={card}
                     handleAddToCart={handleAddToCart}

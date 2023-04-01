@@ -1,5 +1,3 @@
-import { useState } from "react";
-import Cart from './Cart';
 
 
 const Card = (props) => {
@@ -13,11 +11,11 @@ const { date,name,reading, title, img, pimg, description, id } = props.card;
   <div >
     <a href="#!">
       <img
-        className="rounded-t-sm  w-10/12 h-96"
+        className="rounded-t-sm  w-full h-96"
         src={img}
         alt="" />
         </a>
-         <div className="md:flex justify-between w-10/12">
+         <div className="md:flex justify-between w-full">
    <div className=" md:flex space-x-4 item-center my-7 ">  <img className="w-10 h-10 rounded-full" src={pimg} alt=""/>
     <div className="font-medium dark:text-white">
               <div>{name}</div>
@@ -38,12 +36,12 @@ const { date,name,reading, title, img, pimg, description, id } = props.card;
                 <div className="p-6"> 
                     
       <h5
-        className=" w-10/12 mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+        className=" w-full mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
             {title}
                     </h5>
         
 
-      <p className=" w-10/12 mb-4 text-base text-neutral-600 dark:text-neutral-200">
+      <p className=" w-full mb-4 text-base text-neutral-600 dark:text-neutral-200">
         {description}
       </p>
          <a onClick={()=>props.handleReadTime(props.card)} className="text-left mt-8 underline text-blue-500" ><button>Mark as read</button></a>
