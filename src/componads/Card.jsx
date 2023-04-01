@@ -33,7 +33,7 @@ const { date,name,reading, title, img, pimg, description, id } = props.card;
           </div>
 
 </div>
-                <div className="p-6"> 
+                <div className="p-3"> 
                     
       <h5
         className=" w-full mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
@@ -44,7 +44,7 @@ const { date,name,reading, title, img, pimg, description, id } = props.card;
       <p className=" w-full mb-4 text-base text-neutral-600 dark:text-neutral-200">
         {description}
       </p>
-         <a onClick={()=>props.handleReadTime(props.card)} className="text-left mt-8 underline text-blue-500" ><button>Mark as read</button></a>
+         <a onClick={()=>props.handleReadTime(props.card)} className="text-left mt-8 mb-10 underline text-blue-500" ><button>Mark as read</button></a>
         
         </div>
           

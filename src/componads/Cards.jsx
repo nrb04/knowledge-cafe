@@ -18,9 +18,9 @@ const Cards = () => {
     const handleAddToCart = (card, id) => {
         const found = cart.find((card) => card.id == id);
        if (found) {
-      toast.error("Already Bookmarked");
+      toast.error("OH! NO Sorry already add  ");
     } else {
-      toast("Succesfully Bookmarked");
+      toast("ok :) Done Sucess");
         const newCart = [...cart, card];
         setCart(newCart);
     }
