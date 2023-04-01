@@ -1,7 +1,8 @@
 import React, { useState,useEffect } from 'react';
 import Card from './Card';
 import Cart from './Cart';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cards = () => {
     const [cards, setCards] = useState([]);
