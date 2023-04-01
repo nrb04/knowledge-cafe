@@ -46,7 +46,7 @@ const Cards = () => {
                
              
             </div>
-            <div className="w-1/4 bg-white shadow-lg dark:bg-neutral-700" >
+            <div className="lg:w-1/4 bg-white shadow-lg dark:bg-neutral-700" >
                     <Cart cart={cart} reading={readTime} ></Cart>
       <ToastContainer
 position="top-center"

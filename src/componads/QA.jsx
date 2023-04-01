@@ -2,7 +2,7 @@ import React from 'react';
 
 const QA = () => {
     return (
-        <div className=' flex-row justify-center md:container md:mx-auto p-36 mx-10 box-border '>
+        <div className=' lg:flex-row justify-center md:container md:mx-auto lg:p-36 mx-10 box-border '>
             <div>QA Saction</div>
 <div className='shadow-2xl px-4 py-4 my-5'> Difference between React Native Props and State:<br />
 Props are immutable but state is mutable. Props are normally passed from parent component to its child component. But,
